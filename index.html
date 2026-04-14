@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beam Stress Analysis System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">AM</span>
+                <span class="logo-text">AM Engineering</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <div class="nav-links">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <button type="button" class="dropdown-toggle">Pages <i class="fas fa-chevron-down"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="theory.html">Theory</a></li>
+                            <li><a href="calculator.html">Calculator</a></li>
+                            <li><a href="visualizations.html">Visualizations</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="button button-primary nav-cta" href="contact.html">Request Assessment</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero hero-home">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Premium Engineering Product</span>
+                    <h1>Beam Stress Analysis System for Modern Structural Design</h1>
+                    <p>University-level engineering software built like a professional product. Accurate beam bending stress analysis, scientific theory, and responsive UX for every project with a vivid multicolor interface that highlights engineering insight.</p>
+                    <div class="hero-actions">
+                        <a href="calculator.html" class="button button-primary">Open Calculator</a>
+                        <a href="theory.html" class="button button-secondary">Review Theory</a>
+                    </div>
+                </div>
+                <div class="hero-panel">
+                    <div class="hero-card">
+                        <img src="images/beam-structure.svg" alt="Beam Structure" class="hero-image">
+                        <h3>System Overview</h3>
+                        <p>Calculate beam bending stress with the classical formula σ = M y / I and get fast, reliable engineering feedback.</p>
+                        <div class="hero-stat-grid">
+                            <div class="stat-card">
+                                <span>Formula</span>
+                                <strong>σ = M y / I</strong>
+                            </div>
+                            <div class="stat-card">
+                                <span>Units</span>
+                                <strong>Nmm, mm, MPa</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section section-light">
+            <div class="container section-grid">
+                <div>
+                    <span class="eyebrow">About the System</span>
+                    <h2>Designed for engineering students and consulting teams</h2>
+                    <p>AM Engineering delivers a professional beam analysis experience with clean visuals, accurate calculations, and textbook-level theory. This product is built to look like a real engineering company offering software for structural design.</p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>Scientific Accuracy</h3>
+                        <p>Uses the classical bending stress equation with correct variable definitions and consistent unit handling.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-screen"></i>
+                        <h3>Responsive Experience</h3>
+                        <p>Professional layout, mobile-friendly navigation, and smooth page interactions for every device.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Engineering Workflow</h3>
+                        <p>Includes theory, calculator, visualizations, and contact pages for a complete product presentation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Product Modules</span>
+                    <h2>Complete engineering package</h2>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card">
+                        <h3>Theory & Assumptions</h3>
+                        <p>Clear explanations of beam bending stress, variable definitions, and engineering constraints.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Stress Calculator</h3>
+                        <p>Fully working formula input, validation, error handling, and unit-aware output in MPa.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Visualizations</h3>
+                        <p>Diagrams and stress distribution panels to help visualize beam behavior and structural response.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Consultation</h3>
+                        <p>Contact page for project inquiries, university presentation, and academic support.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section equation-section">
+            <div class="container equation-grid">
+                <div class="equation-card">
+                    <h2>Beam Bending Stress Formula</h2>
+                    <p>The central formula for beam design is:</p>
+                    <div class="equation-box">σ = M y / I</div>
+                    <p>This equation returns bending stress using:</p>
+                    <ul class="definition-list">
+                        <li><strong>σ</strong>: bending stress in MPa (N/mm²)</li>
+                        <li><strong>M</strong>: bending moment in N·mm</li>
+                        <li><strong>y</strong>: distance from the neutral axis in mm</li>
+                        <li><strong>I</strong>: second moment of area in mm⁴</li>
+                    </ul>
+                </div>
+                <div class="equation-visual">
+                    <img src="images/bending-stress-diagram.svg" alt="Bending stress diagram">
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-preview">
+            <div class="container preview-grid">
+                <div>
+                    <span class="eyebrow">Get in Touch</span>
+                    <h2>Need a beam design review or university project support?</h2>
+                    <p>Use our contact page to request assessment, ask about formula assumptions, or discuss structural design requirements.</p>
+                    <a href="contact.html" class="button button-primary">Contact AM Engineering</a>
+                </div>
+                <div class="contact-card">
+                    <div>
+                        <strong>Email</strong>
+                        <p>ahmed.emad.khatim@gmail.com</p>
+                    </div>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>07779765322</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo-mark small">AM</span>
+                <div>
+                    <p class="footer-title">AM Engineering</p>
+                    <p class="footer-subtitle">Beam Stress Analysis System</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="theory.html">Theory</a>
+                <a href="calculator.html">Calculator</a>
+                <a href="visualizations.html">Visualizations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-student">
+                <p><strong>Student:</strong> ahmed elmustafa emad eldin sirelkhatim</p>
+                <p><strong>Department:</strong> Mechanical Department</p>
+                <p><strong>College:</strong> Mustansiriyah University</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>

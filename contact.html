@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Beam Stress Analysis System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">AM</span>
+                <span class="logo-text">AM Engineering</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <div class="nav-links">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <button type="button" class="dropdown-toggle">Pages <i class="fas fa-chevron-down"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="theory.html">Theory</a></li>
+                            <li><a href="calculator.html">Calculator</a></li>
+                            <li><a href="visualizations.html">Visualizations</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="button button-primary nav-cta" href="contact.html">Request Assessment</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero hero-secondary">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Contact</span>
+                    <h1>Consultation and university project support</h1>
+                    <p>Reach out for beam design advice, academic review, or to request a structural assessment from AM Engineering.</p>
+                </div>
+                <div class="hero-panel">
+                    <div class="hero-card">
+                        <img src="images/beam-structure.svg" alt="Beam Structure" class="hero-image">
+                        <h3>Professional contact</h3>
+                        <p>Our contact page is built for real engineering communication, including direct email and phone details.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container split-grid">
+                <div class="contact-card fade-in">
+                    <h2>Get in touch</h2>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>ahmed.emad.khatim@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>07779765322</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <p>Baghdad, Iraq</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-card fade-in">
+                    <h2>Send a message</h2>
+                    <form id="contact-form" class="contact-form">
+                        <label>Name</label>
+                        <input type="text" id="name" placeholder="Your full name" required>
+                        <label>Email</label>
+                        <input type="email" id="email" placeholder="Your email address" required>
+                        <label>Message</label>
+                        <textarea id="message" rows="6" placeholder="Explain your project or question"></textarea>
+                        <button type="submit" class="button button-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo-mark small">AM</span>
+                <div>
+                    <p class="footer-title">AM Engineering</p>
+                    <p class="footer-subtitle">Contact page</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="theory.html">Theory</a>
+                <a href="calculator.html">Calculator</a>
+                <a href="visualizations.html">Visualizations</a>
+            </div>
+            <div class="footer-student">
+                <p><strong>Student:</strong> ahmed elmustafa emad eldin sirelkhatim</p>
+                <p><strong>Department:</strong> Mechanical Department</p>
+                <p><strong>College:</strong> Mustansiriyah University</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>

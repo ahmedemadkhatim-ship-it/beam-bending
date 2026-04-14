@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Beam Stress Analysis System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">AM</span>
+                <span class="logo-text">AM Engineering</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <div class="nav-links">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <button type="button" class="dropdown-toggle">Pages <i class="fas fa-chevron-down"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="theory.html">Theory</a></li>
+                            <li><a href="calculator.html">Calculator</a></li>
+                            <li><a href="visualizations.html">Visualizations</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="button button-primary nav-cta" href="contact.html">Request Assessment</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero hero-secondary">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Calculator</span>
+                    <h1>Beam Stress Calculator with unit-aware output</h1>
+                    <p>Enter loading and geometric values using N·mm, mm, and MPa. The system computes bending stress and safety factor with engineering-grade validation.</p>
+                </div>
+                <div class="hero-panel">
+                    <div class="hero-card">
+                        <img src="images/mechanical-analysis.svg" alt="Mechanical Analysis" class="hero-image">
+                        <h3>Use the professional tool</h3>
+                        <p>Accurate results are delivered with clear error handling, copy support, and a polished interface for structural analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container split-grid">
+                <div class="calculator-card fade-in">
+                    <h2>Beam Stress Calculator</h2>
+                    <p>Use the formula σ = M y / I with N·mm and mm inputs to get stress in MPa.</p>
+                    <label>Moment (M) <span>N·mm</span></label>
+                    <input type="number" id="moment" placeholder="e.g. 120000" step="any">
+                    <label>Distance from neutral axis (y) <span>mm</span></label>
+                    <input type="number" id="distance" placeholder="e.g. 35" step="any">
+                    <label>Moment of inertia (I) <span>mm⁴</span></label>
+                    <input type="number" id="inertia" placeholder="e.g. 9800000" step="any">
+                    <label>Yield strength (σy) <span>MPa</span></label>
+                    <input type="number" id="yield-strength" placeholder="e.g. 250" step="any">
+                    <div class="calculator-buttons">
+                        <button id="calculate" class="button button-primary">Calculate</button>
+                        <button id="copy-result" class="button button-secondary">Copy Result</button>
+                        <button id="reset" class="button button-tertiary">Reset</button>
+                    </div>
+                    <div id="result" class="calculator-result"><p class="result-placeholder">Enter values and run the calculation.</p></div>
+                </div>
+                <div class="calculator-info fade-in">
+                    <h3>Calculation guidance</h3>
+                    <p>The moment of inertia is a property of the beam cross-section. The distance y is measured from the neutral axis to the fiber where stress is evaluated.</p>
+                    <div class="info-card small">
+                        <h4>Recommended units</h4>
+                        <ul class="definition-list">
+                            <li><strong>M</strong>: N·mm</li>
+                            <li><strong>y</strong>: mm</li>
+                            <li><strong>I</strong>: mm⁴</li>
+                            <li><strong>σ</strong>: MPa</li>
+                        </ul>
+                    </div>
+                    <div class="info-card small">
+                        <h4>Formula reminder</h4>
+                        <p>When using consistent units, the stress formula still follows σ = M y / I. This system converts your values to MPa automatically.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo-mark small">AM</span>
+                <div>
+                    <p class="footer-title">AM Engineering</p>
+                    <p class="footer-subtitle">Calculator module</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="theory.html">Theory</a>
+                <a href="visualizations.html">Visualizations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-student">
+                <p><strong>Student:</strong> ahmed elmustafa emad eldin sirelkhatim</p>
+                <p><strong>Department:</strong> Mechanical Department</p>
+                <p><strong>College:</strong> Mustansiriyah University</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>

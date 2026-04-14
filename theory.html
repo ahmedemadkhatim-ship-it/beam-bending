@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory | Beam Stress Analysis System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo">
+                <span class="logo-mark">AM</span>
+                <span class="logo-text">AM Engineering</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <div class="nav-links">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <button type="button" class="dropdown-toggle">Pages <i class="fas fa-chevron-down"></i></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="theory.html">Theory</a></li>
+                            <li><a href="calculator.html">Calculator</a></li>
+                            <li><a href="visualizations.html">Visualizations</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="button button-primary nav-cta" href="contact.html">Request Assessment</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero hero-secondary">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Engineering Theory</span>
+                    <h1>Beam Bending Stress Fundamentals</h1>
+                    <p>Explore the scientific basis of the formula σ = M y / I, the meaning of each variable, and the assumptions behind structural beam design.</p>
+                </div>
+                <div class="hero-panel">
+                    <div class="hero-card">
+                        <img src="images/bending-stress-diagram.svg" alt="Bending Stress Diagram" class="hero-image">
+                        <h3>Formula in focus</h3>
+                        <p>This system uses SI-adapted engineering units: N·mm, mm, and MPa to provide industry-style calculations in a university-level product.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="eyebrow">Theory Tabs</span>
+                    <h2>Beam stress theory with clear sections</h2>
+                </div>
+                <div class="tab-nav">
+                    <button class="tab-button active" data-target="tab-1">Bending Stress</button>
+                    <button class="tab-button" data-target="tab-2">Variables & Units</button>
+                    <button class="tab-button" data-target="tab-3">Assumptions</button>
+                </div>
+                <div class="tab-panel active" id="tab-1">
+                    <div class="tab-card">
+                        <h3>Bending Stress Principle</h3>
+                        <p>The bending stress equation defines how a beam responds to bending moment. Stress increases with moment and distance from the neutral axis while decreasing with a larger section moment of inertia.</p>
+                        <div class="theory-table">
+                            <table>
+                                <thead>
+                                    <tr><th>Term</th><th>Description</th></tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>σ</td><td>Bending stress in MPa (N/mm²)</td></tr>
+                                    <tr><td>M</td><td>Bending moment in N·mm</td></tr>
+                                    <tr><td>y</td><td>Distance from neutral axis in mm</td></tr>
+                                    <tr><td>I</td><td>Second moment of area in mm⁴</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-2">
+                    <div class="tab-card">
+                        <h3>Variable definitions</h3>
+                        <ul class="definition-list">
+                            <li><strong>M</strong> — Applied bending moment. For beams under loads, M is the internal moment resisting bending.</li>
+                            <li><strong>y</strong> — Distance from the neutral axis. The outermost fiber sees the greatest bending stress.</li>
+                            <li><strong>I</strong> — Moment of inertia of the cross-section. A larger I means a stiffer, stronger section.</li>
+                        </ul>
+                        <p>Using N·mm and mm produces stress in N/mm², which is numerically equal to MPa, a standard unit for material stress.</p>
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab-3">
+                    <div class="tab-card">
+                        <h3>Engineering assumptions</h3>
+                        <p>Modern beam analysis assumes linear elastic material behavior, small deflections, and that the cross-section remains plane after bending.</p>
+                        <ul class="definition-list">
+                            <li>Material is homogeneous and isotropic.</li>
+                            <li>Beam experiences pure bending or bending-dominant loading.</li>
+                            <li>Shear deformation is negligible for slender beams.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container equation-grid">
+                <div class="equation-card fade-in">
+                    <h3>Beam diagram</h3>
+                    <p>Refer to the diagram to visualize the neutral axis and bending stress distribution.</p>
+                    <img src="images/beam-structure.svg" alt="Beam structure diagram">
+                </div>
+                <div class="equation-card fade-in">
+                    <h3>Stress distribution</h3>
+                    <p>The highest stress occurs farthest from the neutral axis. The system helps you calculate exactly how much stress a beam section sees under bending.</p>
+                    <img src="images/mechanical-analysis.svg" alt="Mechanical analysis illustration">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo-mark small">AM</span>
+                <div>
+                    <p class="footer-title">AM Engineering</p>
+                    <p class="footer-subtitle">Theory and analysis</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="calculator.html">Calculator</a>
+                <a href="visualizations.html">Visualizations</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-student">
+                <p><strong>Student:</strong> ahmed elmustafa emad eldin sirelkhatim</p>
+                <p><strong>Department:</strong> Mechanical Department</p>
+                <p><strong>College:</strong> Mustansiriyah University</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+    <script src="script.js"></script>
+</body>
+</html>
