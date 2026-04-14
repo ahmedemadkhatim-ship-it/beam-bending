@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <rect x="60" y="190" width="120" height="20" fill="#1e3a8a" />
+  <rect x="420" y="190" width="120" height="20" fill="#1e3a8a" />
+  <rect x="120" y="140" width="360" height="30" fill="#3b82f6" rx="10" />
+  <line x1="120" y1="155" x2="120" y2="95" stroke="#1e3a8a" stroke-width="8" />
+  <line x1="480" y1="155" x2="480" y2="95" stroke="#1e3a8a" stroke-width="8" />
+  <path d="M120 95 C 180 75 420 75 480 95" stroke="#60a5fa" stroke-width="8" fill="none" />
+  <text x="300" y="40" font-size="24" text-anchor="middle" fill="#1e3a8a">Beam Structure</text>
+</svg>

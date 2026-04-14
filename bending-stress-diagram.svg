@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300">
+  <rect x="80" y="150" width="440" height="20" fill="#3b82f6" rx="10" />
+  <path d="M100 160 C 150 120 450 120 500 160" stroke="#1e3a8a" stroke-width="10" fill="none" />
+  <line x1="100" y1="160" x2="100" y2="220" stroke="#1e3a8a" stroke-width="6" />
+  <line x1="500" y1="160" x2="500" y2="220" stroke="#1e3a8a" stroke-width="6" />
+  <rect x="90" y="220" width="20" height="20" fill="#1e3a8a" />
+  <rect x="490" y="220" width="20" height="20" fill="#1e3a8a" />
+  <circle cx="300" cy="125" r="25" fill="#60a5fa" opacity="0.6" />
+  <text x="300" y="40" font-size="24" text-anchor="middle" fill="#1e3a8a">Bending Stress</text>
+  <text x="300" y="125" font-size="16" text-anchor="middle" fill="#1e3a8a">σ = M·y / I</text>
+</svg>
